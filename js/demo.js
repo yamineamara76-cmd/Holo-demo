@@ -20,34 +20,36 @@
 
     /* Catalogue : [nom, type, extension, coût, marché, lang, poids de vente] */
     const cat = [
-      ['Display Évolutions Prismatiques', 'display', 'Évolutions Prismatiques', 165, 235, 'FR', 3],
-      ['ETB Évolutions Prismatiques', 'etb', 'Évolutions Prismatiques', 54.9, 89, 'FR', 5],
-      ['Booster Évolutions Prismatiques', 'booster', 'Évolutions Prismatiques', 5.9, 9.5, 'FR', 10],
-      ['Display Rivalités Destinées', 'display', 'Rivalités Destinées', 139, 185, 'FR', 2],
-      ['ETB Rivalités Destinées', 'etb', 'Rivalités Destinées', 49.9, 72, 'FR', 4],
-      ['Booster Rivalités Destinées', 'booster', 'Rivalités Destinées', 5.5, 7.9, 'FR', 9],
-      ['Display Flammes Fantasmagoriques', 'display', 'Flammes Fantasmagoriques', 149, 199, 'FR', 2],
-      ['Booster Flammes Fantasmagoriques', 'booster', 'Flammes Fantasmagoriques', 5.9, 8.5, 'FR', 8],
-      ['ETB Méga-Évolution', 'etb', 'Méga-Évolution', 54.9, 79, 'FR', 4],
-      ['Tripack Foudre Noire', 'tripack', 'Foudre Noire', 18.9, 27, 'FR', 5],
-      ['Tripack Flamme Blanche', 'tripack', 'Flamme Blanche', 18.9, 26, 'FR', 5],
-      ['Coffret Dracaufeu ex Premium', 'upc', '151', 89, 139, 'FR', 2],
-      ['Pokébox Évoli', 'tin', 'Évolutions Prismatiques', 22.9, 34, 'FR', 4],
-      ['Display 151 JP', 'display', '151', 95, 149, 'JP', 2],
-      ['Booster Terastal Festival JP', 'booster', 'Évolutions Prismatiques', 4.2, 7.5, 'JP', 7],
-      ['Dracaufeu ex SIR 151', 'card', '151', 85, 120, 'FR', 1],
-      ['Pikachu ex SIR Étincelles', 'card', 'Étincelles Déferlantes', 150, 210, 'FR', 1],
-      ['Mentali ex SIR PSA 10', 'graded', 'Évolutions Prismatiques', 380, 520, 'FR', 1],
-      ['Lot 50 cartes holo', 'lot', 'Écarlate et Violet', 12, 25, 'FR', 4],
-      ['Protège-cartes Ultra Pro x100', 'accessory', '', 3.2, 6.5, 'FR', 3],
-      ['Coffret Ligue de Combat', 'coffret', 'Mascarade Crépusculaire', 26, 39, 'FR', 2],
-      ['ETB Couronne Stellaire', 'etb', 'Couronne Stellaire', 49.9, 64, 'FR', 2]
+      ['ETB 30e Anniversaire', 'etb', '30 ans', 69.9, 150, 'FR', 5, 'img/p30/etb.png'],
+      ['Lot de 6 boosters (Bundle) 30e Anniversaire', 'coffret', '30 ans', 39.99, 75, 'FR', 6, 'img/p30/bundle.png'],
+      ['Booster 30e Anniversaire', 'booster', '30 ans', 6.5, 12, 'FR', 10, 'img/p30/booster.png'],
+      ['Collection autocollant 30e Anniversaire – Lucario', 'tripack', '30 ans', 21.99, 30, 'FR', 5, 'img/p30/sticker_lucario.png'],
+      ['Collection autocollant 30e Anniversaire – Noadkoko d’Alola', 'tripack', '30 ans', 21.99, 30, 'FR', 5, 'img/p30/sticker_noadkoko.png'],
+      ['Duopack 30e Anniversaire – Évoli', 'tripack', '30 ans', 14.99, 25, 'FR', 4, 'img/p30/blister.png'],
+      ['Coffret 30e Anniversaire – Nymphali-ex', 'coffret', '30 ans', 29.99, 55, 'FR', 3, 'img/p30/nymphali.png'],
+      ['Coffret 30e Anniversaire – Amphinobi-ex', 'coffret', '30 ans', 29.99, 50, 'FR', 3, 'img/p30/amphinobi.png'],
+      ['Collection Premium Métamorph 30e Anniversaire', 'upc', '30 ans', 49.99, 90, 'FR', 3, 'img/p30/metamorph.png'],
+      ['Collection avec figurine 30e Anniversaire – Mew', 'coffret', '30 ans', 39.99, 60, 'FR', 2, 'img/p30/fig_mew.png'],
+      ['Collection avec figurine 30e Anniversaire – Mewtwo', 'coffret', '30 ans', 39.99, 60, 'FR', 2, 'img/p30/fig_mewtwo.png'],
+      ['UPC 30e Anniversaire – Soirée (Noctali)', 'upc', '30 ans', 229.99, 500, 'FR', 1, 'img/p30/upc_soir.png'],
+      ['UPC 30e Anniversaire – Journée (Mentali)', 'upc', '30 ans', 229.99, 450, 'FR', 1, 'img/p30/upc_jour.png'],
+      ['Mini Tin 30e Anniversaire', 'tin', '30 ans', 14.99, 28, 'FR', 4, 'img/p30/minitin.png'],
+      ['Collection K.O. 30e Anniversaire', 'coffret', '30 ans', 24.99, 40, 'FR', 2, 'img/p30/ko.png'],
+      ['Booster Évolutions Prismatiques', 'booster', 'Évolutions Prismatiques', 6.5, 13, 'FR', 9, 'img/demo/booster_ep.webp'],
+      ['Collection poster Évolutions Prismatiques', 'coffret', 'Évolutions Prismatiques', 19.99, 40, 'FR', 2, 'img/demo/poster_ep.webp'],
+      ['Mini Tin Évolutions Prismatiques – Mentali', 'tin', 'Évolutions Prismatiques', 11.99, 25, 'FR', 3, 'img/demo/tin_mentali.webp'],
+      ['Mini Tin Évolutions Prismatiques – Nymphali', 'tin', 'Évolutions Prismatiques', 11.99, 25, 'FR', 3, 'img/demo/tin_nymphali.webp'],
+      ['Mini Tin Évolutions Prismatiques – Voltali', 'tin', 'Évolutions Prismatiques', 11.99, 22, 'FR', 3, 'img/demo/tin_voltali.webp'],
+      ['Mini Tin Évolutions Prismatiques – Aquali', 'tin', 'Évolutions Prismatiques', 11.99, 22, 'FR', 3, 'img/demo/tin_aquali.webp'],
+      ['Booster Règne Delta', 'booster', 'Méga-Évolution', 6.5, 9, 'FR', 8, 'img/demo/booster_delta.webp'],
+      ['Tripack Règne Delta', 'tripack', 'Méga-Évolution', 19.99, 27, 'FR', 4, 'img/demo/tripack_delta.webp'],
+      ['Dracaufeu holo Set de Base', 'card', 'Set de Base', 180, 260, 'FR', 1, 'img/dracaufeu.webp']
     ];
-    const P = cat.map(([name, type, set, cost, market, lang, w], i) => ({
+    const P = cat.map(([name, type, set, cost, market, lang, w, image], i) => ({
       id: 'demo_p' + i, name, type, set, lang, condition: type === 'card' ? 'Near Mint' : type === 'graded' ? 'Mint' : 'Scellé',
       grader: type === 'graded' ? 'PSA' : '', grade: type === 'graded' ? '10' : '', market, marketAt: U.addDays(today, -ri(0, 20)),
       target: r2(market * 1.05), minStock: '', sku: '', location: pick(['Étagère A', 'Étagère B', 'Carton 1', 'Classeur', '']), notes: '', archived: false,
-      createdAt: t0++, _cost: cost, _w: w
+      createdAt: t0++, image, _cost: cost, _w: w
     }));
     st.products = P.map(p => { const o = Object.assign({}, p); delete o._cost; delete o._w; return o; });
     const qty = {}, got = {}; P.forEach(p => { qty[p.id] = 0; got[p.id] = 0; });

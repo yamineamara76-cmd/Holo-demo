@@ -5,6 +5,7 @@ const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; ch
 http.createServer((req, res) => {
   let p = decodeURIComponent((req.url || '/').split('?')[0]);
   if (p === '/' || p === '') p = '/index.html';
+  if (p.startsWith('/css/img/')) p = p.slice(4);   // images citées depuis la feuille de style
   const file = path.normalize(path.join(ROOT, p));
   if (!file.startsWith(ROOT) || /server\.js$|package\.json$/.test(file)) { res.writeHead(404); return res.end(); }
   fs.readFile(file, (err, data) => {
