@@ -489,7 +489,7 @@
   async function boot() {
     await S.load();
     /* Version démo : données fictives chargées au premier lancement, rien n'est envoyé en ligne */
-    if (!S.state.products.length) { const d = HOLO_demo(); d.settings.theme = S.state.settings.theme || 'dark'; S.replaceAll(d); }
+    if (!S.state.products.length || S.state.settings.demoV !== 2) { const d = HOLO_demo(); d.settings.theme = S.state.settings.theme || 'dark'; d.settings.demoV = 2; S.replaceAll(d); }
     const old30 = S.state.products.filter(p => /^\s*30\s*$/.test(p.set || ''));   // série « 30 » saisie à la main → « 30 ans »
     if (old30.length) { old30.forEach(p => { p.set = '30 ans'; }); S.commit(); }
     S.seed30(); S.images30(); S.imagesRef();                                                                 // gamme « 30 ans » pré-enregistrée (une fois)
